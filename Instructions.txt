@@ -1,0 +1,7 @@
+The CSS Excercise is designed to test creative thinking and problemsolving using CSS in a scenario when other options (such as modifying the HTML or JavaScript) are not available, as well as demonstrate command of latest CSS properties available. Code organization, conciseness, and readability will also be taken into account when evaluating your solution.
+
+It is acceptable to use SASS/SCSS, if desired.  If SASS is used, both the compiled CSS and the SCSS Source should be submitted.  The compiled CSS will be used to test the browser behavior, and the SCSS source will be used to evaluate organization and quality of code.
+
+In addition to matching the style of the image, an animation should be added to the loading of the 6 boxes of the developers discretion.
+
+Excercise is 'open book' -- use of any tool you typically use in your development workflow, including internet searches and online resources is acceptable.  Direct input or assistance from another human is not acceptable.

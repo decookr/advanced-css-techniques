@@ -1,0 +1,84 @@
+/** All styles should be placed in this single stylesheet - this is the only file that should be modified during the completion of the CSS Excercise **/
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    visibility: hidden;
+    height: 350px;
+    width: 350px;
+    background-color: #007f8a;
+    position: relative;
+    border-radius: 35px 0;
+    margin: 15px;
+}
+
+.item:before {
+    content: "Block 1";
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 290px;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    right: 35px;
+    bottom: 35px;
+    border: 3px solid #ffffff;
+  }
+
+.item.in {
+    visibility: visible;
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color:#555555;
+      border-radius: 0%;
+    }
+    50% {
+        background-color: #007e8a6b;
+        border-radius: 17px 0;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.item:nth-child(2) {
+    background-color: #ff5761;
+}
+.item:nth-child(6) {
+    background-color: #ff5761;
+}
+.item:nth-child(3) {
+    background-color: #555555;
+}
+.item:nth-child(4) {
+    background-color: #999999;
+}
+.item:nth-child(2):before {
+    content: "Block 2";
+}
+.item:nth-child(3):before {
+    content: "Block 3";
+}
+.item:nth-child(4):before {
+    content: "Block 4";
+}
+.item:nth-child(5):before {
+    content: "Block 5";
+}
+.item:nth-child(6):before {
+    content: "Block 6";
+}
